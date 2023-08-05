@@ -54,6 +54,8 @@ export const QR: FC = () => {
   };
 
   useEffect(() => {
+    const screenWidth = window.innerWidth;
+    screenWidth < 500 ? setChangeText(false) : setChangeText(true);
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
