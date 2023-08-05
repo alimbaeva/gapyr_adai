@@ -1,0 +1,54 @@
+.video {
+    position: fixed;
+    top: 0;
+    height: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 20;
+    opacity: 1;
+}
+
+.video-smole {
+    position: fixed;
+    height: 0;
+    height: 0;
+    width: 0;
+}
+
+.video-block {
+    width: 250px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateY(50%);
+    transform: translateX(-50%);
+}
+
+.video-block-smol {
+    width: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 70%;
+    left: 80%;
+}
+
+.btn-video {
+    width: 100%;
+    height: 100%;
+    // background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.scaleVidea {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}

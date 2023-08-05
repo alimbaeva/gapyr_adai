@@ -6,6 +6,7 @@ import { Header } from './components/header/Header';
 import { Herro } from './components/herro/Herro';
 import { QrCode } from './components/qr/QrCode';
 import { TargetProject } from './components/targetProject/TargetProject';
+import { ShowVideo } from './components/showVideo/ShowVideo';
 
 export const App: FC = () => {
   const { themes } = useSelector((state: RootState) => state.ThemesReducer);
@@ -21,6 +22,7 @@ export const App: FC = () => {
       <Herro />
       <TargetProject />
       <QrCode />
+      <ShowVideo />
     </Router>
   );
 };
