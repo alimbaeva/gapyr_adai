@@ -1,5 +1,5 @@
 .qr-block {
-    margin-top: 2.3rem;
+    padding-top: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,6 +13,7 @@
     }
 
     li {
+        margin-bottom: 1%;
         font-family: "open sans";
         font-size: 1.5rem;
         display: flex;
