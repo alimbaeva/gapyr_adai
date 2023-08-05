@@ -31,14 +31,16 @@
         }
 
         .btn-block {
+            margin-top: 6%;
+            margin-bottom: 7%;
+            margin-bottom: 3%;
             display: flex;
             justify-content: space-between;
         }
 
         .button {
             width: 43%;
-            padding: .5rem;
-            margin-top: 1.8rem;
+            padding: .5rem;            
             font-size: 1.5rem;
             display: flex;
             justify-content: center;
@@ -77,6 +79,17 @@
 
         .QR-block {
             margin-bottom: 8%;
+
+            .btn-block {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .button {
+                width: 90%;
+                font-size: .8rem;
+                margin-bottom: 5%;
+            }
         }
 
     }

@@ -46,6 +46,7 @@ export const QR: FC = () => {
 
   const copyLink = () => {
     navigator.clipboard.writeText(qrData);
+    dispatch(setModalOpen(false));
   };
 
   const handleResize = () => {
@@ -82,8 +83,7 @@ export const QR: FC = () => {
         </ul>
       </ModalWindow>
       <div>
-        <h2>QR-код</h2>
-        <QRCode value={qrData} size={changeText ? 390 : 280} />
+        <QRCode value={qrData} size={changeText ? 390 : 200} />
         <div className="btn-block">
           <div className="button" onClick={handleModal}>
             <p>Поделиться</p>

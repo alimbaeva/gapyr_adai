@@ -1,0 +1,26 @@
+.target-text {
+    padding-top: 8%;
+    p {
+        width: 70%;
+        margin: 2% auto 5%;
+        font-size: 1.8rem;
+        text-align:justify;
+    }
+
+    .black {
+        color: rgba(120, 153, 220, 0.942);
+    }
+    .light {
+        color: rgb(37, 33, 33);
+    }
+}
+
+@media (max-width: 780px) {
+    .target-text {
+        p {
+            width: 90%;
+            font-size: 1.3rem;
+            padding-bottom: 7%;
+        }
+    }
+}
