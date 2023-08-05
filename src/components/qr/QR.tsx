@@ -42,7 +42,6 @@ export const QR: FC = () => {
   };
 
   const copyLink = () => {
-    console.log('------------');
     navigator.clipboard.writeText(qrData);
   };
 
