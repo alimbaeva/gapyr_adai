@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import logo from '../../assets/image/logo.jpg';
+import logo from '../../assets/image/logo.png';
 import sun from '../../assets/icone/sun.svg';
 import moon from '../../assets/icone/moon.svg';
 import { useDispatch, useSelector } from 'react-redux';

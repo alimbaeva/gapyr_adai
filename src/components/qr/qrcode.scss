@@ -1,0 +1,52 @@
+.qr-block {
+    margin-top: 2.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        width: 50%;
+    }
+
+    span {
+        margin-right: 6px;
+    }
+
+    li {
+        font-family: "open sans";
+        font-size: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .QR-block {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+        }
+
+        .btn-block {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button {
+            width: 43%;
+            padding: .5rem;
+            margin-top: 1.8rem;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+

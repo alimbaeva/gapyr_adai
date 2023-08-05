@@ -2,10 +2,12 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface IInitialThemes {
   themes: boolean;
+  modalOpen: boolean;
 }
 
 const initialThemes: IInitialThemes = {
   themes: localStorage.getItem('themes') ? JSON.parse(`${localStorage.getItem('themes')}`) : true,
+  modalOpen: false,
 };
 
 export const ThemesSlice = createSlice({
@@ -15,11 +17,14 @@ export const ThemesSlice = createSlice({
     setThemes: (state: IInitialThemes, action) => {
       state.themes = action.payload;
     },
+    setModalOpen: (state: IInitialThemes, action) => {
+      state.modalOpen = action.payload;
+    },
   },
 });
 
 const { actions, reducer: ThemesReducer } = ThemesSlice;
 
-export const { setThemes } = actions;
+export const { setThemes, setModalOpen } = actions;
 
 export default ThemesReducer;

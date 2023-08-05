@@ -1,0 +1,65 @@
+.blue {
+ background-color: rgba(126, 160, 227, 0.567);
+}
+.gray {
+    background-color: rgb(65, 62, 62);
+}
+.herro {
+    min-height: 400px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    span {
+        font-family: 'Dancing Script', 'cursive';
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+    }
+
+    .img img {
+        width: 300px;
+        border-radius: 100%;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .herro {
+        span {
+            font-size: 2.2rem;
+        }
+    }
+  }
+@media (max-width: 860px) {
+    .herro {
+        .img img {
+            width: 190px;
+        }
+        span {
+            font-size: 1.5rem;
+        }
+    }
+  }
+
+@media (max-width: 778px) {
+    .herro {
+        flex-wrap: wrap-reverse;
+    }
+  }
+  
+
+@media (max-width: 500px) {
+    .herro {
+        min-height: 200px;
+        span {
+            font-size: 16px;
+        }
+    
+        .img img {
+            width: 150px;
+            margin-bottom: 1rem;
+        }
+    }
+  }
+  

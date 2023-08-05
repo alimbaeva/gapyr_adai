@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from './store';
 import { Header } from './components/header/Header';
+import { Herro } from './components/herro/Herro';
+import { QrCode } from './components/qr/QrCode';
 
 export const App: FC = () => {
   const { themes } = useSelector((state: RootState) => state.ThemesReducer);
@@ -15,6 +17,8 @@ export const App: FC = () => {
   return (
     <Router>
       <Header />
+      <Herro />
+      <QrCode />
     </Router>
   );
 };
