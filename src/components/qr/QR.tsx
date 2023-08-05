@@ -1,4 +1,4 @@
-import { FC, useRef } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import QRCode from 'qrcode.react';
 import { ModalWindow } from '../modalWindow/ModalWindow';
 import { useDispatch, useSelector } from 'react-redux';
@@ -15,6 +15,9 @@ export const QR: FC = () => {
   const { modalOpen } = useSelector((state: RootState) => state.ThemesReducer);
   const downloadLinkRef = useRef<HTMLAnchorElement | null>(null);
   const dispatch = useDispatch<AppDispatch>();
+
+  const [changeText, setChangeText] = useState(true);
+
   const qrData = 'https://example.com'; // Здесь поместить свои данные
 
   const handleDownloadQRCode = () => {
@@ -45,6 +48,17 @@ export const QR: FC = () => {
     navigator.clipboard.writeText(qrData);
   };
 
+  const handleResize = () => {
+    window.innerWidth < 500 ? setChangeText(false) : setChangeText(true);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className="QR-block">
       <ModalWindow active={modalOpen}>
@@ -69,7 +83,7 @@ export const QR: FC = () => {
       </ModalWindow>
       <div>
         <h2>QR-код</h2>
-        <QRCode value={qrData} size={320} />
+        <QRCode value={qrData} size={changeText ? 390 : 280} />
         <div className="btn-block">
           <div className="button" onClick={handleModal}>
             <p>Поделиться</p>
