@@ -69,7 +69,7 @@ export const QR: FC = () => {
       </ModalWindow>
       <div>
         <h2>QR-код</h2>
-        <QRCode value={qrData} size={360} />
+        <QRCode value={qrData} size={320} />
         <div className="btn-block">
           <div className="button" onClick={handleModal}>
             <p>Поделиться</p>

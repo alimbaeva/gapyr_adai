@@ -50,3 +50,29 @@
     }
 }
 
+@media (max-width: 1060px) {
+    .qr-block {
+        flex-wrap: wrap-reverse;
+
+        ul {
+            width: 100%;
+        }
+
+        .QR-block {
+            width: 100%;
+            
+        }
+
+    }
+  }
+
+  @media (max-width: 500px) {
+    .qr-block {
+        flex-wrap: wrap-reverse;
+
+        li {
+            font-size: 1.2rem;
+        }
+
+    }
+  }
