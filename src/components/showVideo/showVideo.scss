@@ -52,3 +52,10 @@
     height: 100%;
     background-color: red;
 }
+
+@media (max-width: 500px) {
+    .video-block-smol {
+        top: 70%;
+        left: 60%;
+    }
+  }
