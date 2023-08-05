@@ -34,7 +34,6 @@ export const ShowVideo: FC = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-  console.log(isPlaying);
 
   return (
     <section

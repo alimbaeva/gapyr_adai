@@ -2,12 +2,17 @@ import { FC } from 'react';
 import './targetProject.scss';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store';
+import ReactPlayer from 'react-player';
+import video from '../../assets/video/video.mp4';
 
 export const TargetProject: FC = () => {
   const { themes } = useSelector((state: RootState) => state.ThemesReducer);
 
   return (
     <section className="container target-text">
+      <div className="videoBlock" style={{ width: '250px' }}>
+        <ReactPlayer url={video} controls={true} width="100%" height="100%" />
+      </div>
       <p>
         Современная динамичная реальность диктует свои правила, и мы осознаем, что множество людей,
         включая подростков и даже взрослых, могут столкнуться с трудностями в использовании
