@@ -7,6 +7,8 @@ import { Herro } from './components/herro/Herro';
 import { QrCode } from './components/qr/QrCode';
 import { TargetProject } from './components/targetProject/TargetProject';
 import { ShowVideo } from './components/showVideo/ShowVideo';
+import { Footer } from './components/footer/Footer';
+import { GoChatBot } from './components/goChatBot/GoChatBot';
 
 export const App: FC = () => {
   const { themes } = useSelector((state: RootState) => state.ThemesReducer);
@@ -21,7 +23,9 @@ export const App: FC = () => {
       <Header />
       <Herro />
       <TargetProject />
+      <GoChatBot />
       <QrCode />
+      <Footer />
       <ShowVideo />
     </Router>
   );
