@@ -8,13 +8,36 @@
     min-height: 400px;
     padding: 30px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
+    .herro-text {
+        width: 100%;
+        div {
+            width: 700px;
+            margin: auto;
+            span {
+                display: block;
+                font-family: 'Dancing Script', 'cursive';
+                font-family: 'Playfair Display', serif;
+                font-size: 1.4rem;
+                font-weight: 900;
+                margin-bottom: 2%;
+                padding-bottom: 1%;
+            }
+
+            p {
+                font-size: 1.2rem;
+                text-align: justify;
+                margin-bottom: 4%;
+            }
+        }
+    }
     
-    span {
-        font-family: 'Dancing Script', 'cursive';
-        font-family: 'Playfair Display', serif;
-        font-size: 3rem;
+
+    .img  {
+        margin-bottom: 5%;
     }
 
     .img img {
@@ -26,9 +49,14 @@
 
 @media (max-width: 1100px) {
     .herro {
-        span {
-            font-size: 2.2rem;
-        }
+        .herro-text {
+            width: 100%;
+            div {
+                span {
+                    font-size: 1.2rem;
+                    margin-bottom: 5%;
+                }
+            }}
     }
   }
 @media (max-width: 860px) {
@@ -36,26 +64,26 @@
         .img img {
             width: 190px;
         }
-        span {
-            font-size: 1.5rem;
+
+        .herro-text {
+            div {
+                width: 90%;
+            }
         }
     }
   }
 
 @media (max-width: 778px) {
-    .herro {
-        flex-wrap: wrap-reverse;
-    }
+    // .herro {
+    //     flex-wrap: wrap-reverse;
+    // }
   }
   
 
 @media (max-width: 500px) {
     .herro {
         min-height: 200px;
-        span {
-            font-size: 16px;
-        }
-    
+           
         .img img {
             width: 150px;
             margin-bottom: 1rem;

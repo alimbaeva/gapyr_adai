@@ -22,6 +22,7 @@ export const App: FC = () => {
     <Router>
       <Header />
       <Herro />
+      <GoChatBot />
       <TargetProject />
       <GoChatBot />
       <QrCode />
