@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import AnimatedTextWord from './AnimatedTextWord';
+// import AnimatedTextWord from './AnimatedTextWord';
 import foto from '../../assets/image/foto.png';
 
 import './herro.scss';

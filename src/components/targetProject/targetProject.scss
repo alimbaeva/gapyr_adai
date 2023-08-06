@@ -1,17 +1,34 @@
 .target-text {
     padding-top: 8%;
+
+    ul {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    li {
+        margin: 7% 0;
+
+        span {
+            display: block;
+            font-weight: 900;
+            font-size: 1.5rem;
+            margin-bottom: 1%;
+        }
+    }
     p {
-        width: 70%;
-        margin: 2% auto 5%;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         text-align:justify;
+        margin-bottom: 3%;
     }
 
     .black {
         color: rgba(120, 153, 220, 0.942);
+        font-size: 1.3rem;
     }
     .light {
         color: rgb(37, 33, 33);
+        font-size: 1.3rem;
     }
 
     .videoBlock {
