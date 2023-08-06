@@ -14,7 +14,8 @@ export const Footer: FC = () => {
           <img src={logo} alt="" />
         </div>
         <p>
-          GapyrAgayBot<a href="http://" target="_blank" rel="noopener noreferrer"></a>
+          GapyrAgayBot
+          <a href="https://t.me/GapyrAgay_bot" target="_blank" rel="noopener noreferrer"></a>
         </p>
         <p>APEX.EDU</p>
         <p>06.08.2023</p>

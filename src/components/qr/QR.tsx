@@ -18,7 +18,7 @@ export const QR: FC = () => {
 
   const [changeText, setChangeText] = useState(true);
 
-  const qrData = 'https://example.com'; // Здесь поместить свои данные
+  const qrData = 'https://t.me/GapyrAgay_bot'; // Здесь поместить свои данные
 
   const handleDownloadQRCode = () => {
     const qrCanvas = document.querySelector('canvas');
@@ -66,7 +66,7 @@ export const QR: FC = () => {
     <div className="QR-block">
       <ModalWindow active={modalOpen}>
         <ul className="send-link">
-          <li onClick={copyLink} id="">
+          <li onClick={copyLink} id="https://t.me/GapyrAgay_bot">
             <p>Копировать ссылку</p>
             <img src={copy} />
           </li>

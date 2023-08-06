@@ -11,7 +11,7 @@ export const GoChatBot: FC = () => {
       <div className="container go-chat-bot">
         <div className="button">
           <p>Перейти на - GapyrAgayBot</p>
-          <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+          <a href="https://t.me/GapyrAgay_bot" target="_blank" rel="noopener noreferrer"></a>
         </div>
       </div>
     </section>
