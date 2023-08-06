@@ -8,6 +8,7 @@ import whatsapp from '../../assets/icone/whatsapp.svg';
 import viber from '../../assets/icone/viber.svg';
 import telegram from '../../assets/icone/telegram.svg';
 import copy from '../../assets/icone/copy.svg';
+import QRcodeSvg from '../../assets/icone/QR.svg';
 
 import './qrcode.scss';
 
@@ -85,7 +86,13 @@ export const QR: FC = () => {
         </ul>
       </ModalWindow>
       <div>
-        <QRCode value={qrData} size={changeText ? 390 : 200} />
+        {/* <QRCode value={qrData} size={changeText ? 390 : 200} /> */}
+        <img
+          src={QRcodeSvg}
+          width={changeText ? 350 : 200}
+          height={changeText ? 350 : 200}
+          title="QR код"
+        ></img>
         <div className="btn-block">
           <div className="button" onClick={handleModal}>
             <p>Поделиться</p>
