@@ -25,7 +25,7 @@ export const QR: FC = () => {
     const qrCanvas = document.querySelector('canvas');
 
     if (qrCanvas && downloadLinkRef.current) {
-      const qrDataURL = qrCanvas.toDataURL('image/png');
+      const qrDataURL = qrCanvas.toDataURL(QRcodeSvg);
       downloadLinkRef.current.href = qrDataURL;
       downloadLinkRef.current.download = 'qrcode.png';
       downloadLinkRef.current.click();
@@ -97,9 +97,9 @@ export const QR: FC = () => {
           <div className="button" onClick={handleModal}>
             <p>Поделиться</p>
           </div>
-          <div className="button" onClick={handleDownloadQRCode}>
+          {/* <div className="button" onClick={handleDownloadQRCode}>
             <p>Скачать</p>
-          </div>
+          </div> */}
           <a ref={downloadLinkRef} style={{ display: 'none' }} />
         </div>
       </div>
