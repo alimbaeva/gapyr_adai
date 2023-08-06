@@ -6,7 +6,7 @@ interface IInitialThemes {
 }
 
 const initialThemes: IInitialThemes = {
-  themes: localStorage.getItem('themes') ? JSON.parse(`${localStorage.getItem('themes')}`) : true,
+  themes: localStorage.getItem('themes') ? JSON.parse(`${localStorage.getItem('themes')}`) : false,
   modalOpen: false,
 };
 

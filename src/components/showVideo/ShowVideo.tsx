@@ -5,8 +5,8 @@ import './showVideo.scss';
 
 export const ShowVideo: FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [changeVideo, setChangeVideo] = useState(true);
-  const [smoleVideo, setSmoleVideo] = useState(true);
+  const [changeVideo, setChangeVideo] = useState(false);
+  const [smoleVideo, setSmoleVideo] = useState(false);
 
   const playVideo = () => {
     setIsPlaying(!isPlaying);
